@@ -1,0 +1,47 @@
+.Background {
+    background: linear-gradient(45deg, rgb(255, 64, 5), rgb(165, 131, 19), rgb(0, 0, 0), rgb(0, 0, 0));
+    background-size: 400% 400%;
+    animation: gradientAnimation 5s ease-in-out infinite;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .navbar {
+    display: flex;
+    background-color: #000000;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .navButton {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navButton:hover {
+    background-color: #bd311f;
+  }
+
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
